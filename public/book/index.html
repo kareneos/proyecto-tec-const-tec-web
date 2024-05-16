@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <title>GastroGala - Reserva</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playball&display=swap" rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="../lib/animate/animate.min.css" rel="stylesheet">
+        <link href="../lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="../lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="../css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar start -->
+        <div class="container-fluid nav-bar">
+            <div class="container">
+                <nav class="navbar navbar-light navbar-expand-lg py-4">
+                    <a href="/" class="navbar-brand">
+                        <h1 class="text-primary fw-bold mb-0">Gastro<span class="text-dark">Gala</span> </h1>
+                    </a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a href="/" class="nav-item nav-link active">Inicio</a>
+                            <a href="/about" class="nav-item nav-link">Nosotros</a>
+                            <a href="/book" class="nav-item nav-link">Reservas</a>
+                            <a href="/menu" class="nav-item nav-link">Menú</a>
+                            <a href="/contact" class="nav-item nav-link">Contacto</a>
+                        </div>
+                        <a href="/book" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Reserva ahora</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- Hero Start -->
+        <div class="container-fluid bg-light py-6 my-6 mt-0" id="hero">
+            <div class="container text-center animated bounceInDown">
+                <h1 class="display-1 mb-4">Reservaciones</h1>
+                <ol class="breadcrumb justify-content-center mb-0 animated bounceInDown">
+                    <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+                    <li class="breadcrumb-item"><a href="/menu">Menu</a></li>
+                    <li class="breadcrumb-item"><a href="/contact">Contacto</a></li>
+                </ol>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+
+        <!-- Book Us Start -->
+        <div class="container-fluid contact py-2 wow bounceInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-1">
+                        <img src="https://themewagon.github.io/CaterServ/img/background-site.jpg" class="img-fluid h-100 w-100 rounded-start" style="object-fit: cover; opacity: 0.7;" alt="">
+                    </div>
+                    <div class="col-10">
+                        <div class="border-bottom border-top border-primary bg-light py-5 px-4">
+                            <div class="text-center">
+                                <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Reserva</small>
+                                <h1 class="display-5 mb-5">¿Dónde requieres el servicio?</h1>
+                            </div>
+                            <div class="row g-4 form">
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select border-primary p-2" aria-label="Default select example">
+                                        <option selected>País</option>
+                                        <option value="1">México</option>
+                                        <option value="2">UK</option>
+                                        <option value="3">USA</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select border-primary p-2" aria-label="Default select example">
+                                        <option selected>Ciudad</option>
+                                        <option value="1">CDMX</option>
+                                        <option value="2">Monterrey</option>
+                                        <option value="3">Guadalajara</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select border-primary p-2" aria-label="Default select example">
+                                        <option selected>Lugar</option>
+                                        <option value="1">Casino Español</option>
+                                        <option value="2">UK Casino</option>
+                                        <option value="3">India Casino</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select border-primary p-2" aria-label="Default select example">
+                                        <option selected>Tipo de evento</option>
+                                        <option value="1">Chico</option>
+                                        <option value="2">Mediano</option>
+                                        <option value="3">Grande</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select border-primary p-2" aria-label="Default select example">
+                                        <option selected>No. De Personas</option>
+                                        <option value="1">100-200</option>
+                                        <option value="2">300-400</option>
+                                        <option value="3">500-600</option>
+                                        <option value="4">700-800</option>
+                                        <option value="5">900-1000</option>
+                                        <option value="6">1000+</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select border-primary p-2" aria-label="Default select example">
+                                        <option selected>Tipo de alimento</option>
+                                        <option value="1">Vegetariano</option>
+                                        <option value="2">No Vegetariano</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <input type="mobile" class="form-control border-primary p-2" placeholder="Teléfono">
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <input type="date" class="form-control border-primary p-2" placeholder="Fecha">
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <input type="email" class="form-control border-primary p-2" placeholder="Email">
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <img src="https://themewagon.github.io/CaterServ/img/background-site.jpg" class="img-fluid h-100 w-100 rounded-end" style="object-fit: cover; opacity: 0.7;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Book Us End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h1 class="text-primary">Gastro<span class="text-dark">Gala</span></h1>
+                            <p class="lh-lg mb-4">Elegancia Culinaria, Momentos Inolvidables</p>
+                            <div class="footer-icon d-flex">
+                                <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="btn btn-primary btn-sm-square me-2 rounded-circle"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn btn-primary btn-sm-square rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="mb-4">Platillos destacados</h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <a class="text-body mb-3" href="/menu"><i class="fa fa-check text-primary me-2"></i>Filete Wellington</a>
+                                <a class="text-body mb-3" href="/menu"><i class="fa fa-check text-primary me-2"></i>Risotto de Langosta</a>
+                                <a class="text-body mb-3" href="/menu"><i class="fa fa-check text-primary me-2"></i>Terrina Foie Gras</a>
+                                <a class="text-body mb-3" href="/menu"><i class="fa fa-check text-primary me-2"></i>Boeuf Bourgignon</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="mb-4">Contáctanos</h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <p><i class="fa fa-map-marker-alt text-primary me-2"></i> 123 Street, New York, USA</p>
+                                <p><i class="fa fa-phone-alt text-primary me-2"></i> (+012) 3456 7890 123</p>
+                                <p><i class="fas fa-envelope text-primary me-2"></i> info@gastrogala.com</p>
+                                <p><i class="fa fa-clock text-primary me-2"></i> Atención telefónica 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="mb-4">Socio Galería</h4>
+                            <div class="row g-2">
+                                <div class="col-4">
+                                     <img src="https://themewagon.github.io/CaterServ/img/menu-01.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="https://themewagon.github.io/CaterServ/img/menu-02.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="https://themewagon.github.io/CaterServ/img/menu-03.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="https://themewagon.github.io/CaterServ/img/menu-04.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="https://themewagon.github.io/CaterServ/img/menu-05.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="https://themewagon.github.io/CaterServ/img/menu-06.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright bg-dark py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center mb-3 mb-md-0">
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Made with love ♥ by Karen Estela Orozco Sandoval</a><br> 17 mayo 2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../lib/wow/wow.min.js"></script>
+        <script src="../lib/easing/easing.min.js"></script>
+        <script src="../lib/waypoints/waypoints.min.js"></script>
+        <script src="../lib/counterup/counterup.min.js"></script>
+        <script src="../lib/lightbox/js/lightbox.min.js"></script>
+        <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="../js/main.js"></script>
+    </body>
+</html>
